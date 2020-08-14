@@ -3231,6 +3231,11 @@ duplexify@^3.4.2, duplexify@^3.6.0:
     readable-stream "^2.0.0"
     stream-shift "^1.0.0"
 
+easemob-websdk@^3.2.0:
+  version "3.2.0"
+  resolved "https://registry.npm.taobao.org/easemob-websdk/download/easemob-websdk-3.2.0.tgz#a58756b53d804aeab31207b1a4fcd1b39ceb8aad"
+  integrity sha1-pYdWtT2ASuqzEgexpPzRs5zriq0=
+
 easy-stack@^1.0.0:
   version "1.0.0"
   resolved "https://registry.npm.taobao.org/easy-stack/download/easy-stack-1.0.0.tgz#12c91b3085a37f0baa336e9486eac4bf94e3e788"
@@ -8097,6 +8102,11 @@ vue-loader@^15.9.2:
     loader-utils "^1.1.0"
     vue-hot-reload-api "^2.3.0"
     vue-style-loader "^4.1.0"
+
+vue-router@^3.4.3:
+  version "3.4.3"
+  resolved "https://registry.npm.taobao.org/vue-router/download/vue-router-3.4.3.tgz#fa93768616ee338aa174f160ac965167fa572ffa"
+  integrity sha1-+pN2hhbuM4qhdPFgrJZRZ/pXL/o=
 
 vue-style-loader@^4.1.0, vue-style-loader@^4.1.2:
   version "4.1.2"

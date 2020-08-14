@@ -1,28 +1,32 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <div>a</div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  import WebIM from './config/WebIM';
+  export default {
+    mixins:[
+      {
+        methods:{
+          $login(){
+            WebIM.conn.open({
+              apiUrl: WebIM.config.apiURL,
+              user: 'im_doc_15570775688',
+              pwd: '123456',
+              appKey: WebIM.config.appkey
+            })
+          }
+        }
+      }
+    ],
+    name: 'First',
+    created() {
+      this.$login()
+    }
   }
-}
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style scoped>
+
 </style>
